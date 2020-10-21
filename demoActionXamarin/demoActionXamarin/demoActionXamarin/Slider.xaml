@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="demoActionXamarin.Slider">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="End">
+            <Grid RowSpacing="0" x:Name="frame" 
+                  BackgroundColor="white" 
+                  VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Slider Margin="50,0,50,0" Grid.Row="1" Maximum="100"
+                ValueChanged="OnSliderValueChanged" />
+
+                <!--<SwipeView Grid.Row="1" VerticalOptions="End" Margin="50,0,50,0">
+                    <SwipeView.LeftItems>
+                        <SwipeItems Mode="Execute" SwipeBehaviorOnInvoked="Close">
+                            <SwipeItem Text="ยืนยันจ่ายเงิน" BackgroundColor="Red" Invoked="SwipeItem_Invoked" />
+                        </SwipeItems>
+                    </SwipeView.LeftItems>
+                    --><!-- Content --><!--
+                    <Grid HeightRequest="50" BackgroundColor="PaleVioletRed">
+                        <Label Text="เลื่อนเพื่อจ่ายเงิน" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="White" />
+                    </Grid>
+                </SwipeView>-->
+                <Label Margin="5" FontSize="20" Grid.Row="0" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Text="ลากเพื่อยืนยัน"></Label>
+                <Image VerticalOptions="StartAndExpand" HorizontalOptions="EndAndExpand" Margin="5" Grid.Row="0" HeightRequest="30" WidthRequest="30" Source="https://image.freepik.com/free-icon/x-circle_318-10141.jpg">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped"
+                NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <!--<Label Margin="5" FontSize="20" Grid.Row="0" HorizontalOptions="CenterAndExpand" Text="ลากเพื่อยืนยัน"></Label>-->
+            </Grid>
+            <Button TextColor="white" BackgroundColor="red" Text="จ่ายเงิน" x:Name="myButton"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

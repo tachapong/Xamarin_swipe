@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="demoActionXamarin.SwipeAndClick">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="End">
+
+            <SwipeView VerticalOptions="End">
+                <SwipeView.RightItems>
+                    <SwipeItems Mode="Reveal" SwipeBehaviorOnInvoked="Close">
+                        <SwipeItem Text="จ่ายเงิน" IconImageSource="https://png2.cleanpng.com/sh/ee683ea0ce63bb715effe9976e0c66bf/L0KzQYm3V8IyN5JqhJH0aYP2gLBuTgBqNZRmi9o2c4n2hL7sTgMuel5xRd94bnX8PbT2jgB2fJZ3Rdtsb372PcTvTgJma5ZujtdtLUXlRYS3WMA0OGI6Tqk7LkO3RIW3V8c2OWY4SqMBOEG8RYG3VcUveJ9s/kisspng-pi-cash-systme-s-r-l-money-computer-icons-sh-received-5b530803015672.3444077515321681950055.png"  BackgroundColor="Red" Invoked="SwipeItem_Invoked" />
+                    </SwipeItems>
+                </SwipeView.RightItems>
+                <!-- Content -->
+                <Grid HeightRequest="50" BackgroundColor="PaleVioletRed">
+                    <Label Text="เลื่อนเพื่อจ่ายเงิน" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="White" />
+                </Grid>
+            </SwipeView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
