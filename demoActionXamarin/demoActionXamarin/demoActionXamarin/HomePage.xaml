@@ -8,6 +8,8 @@
             <Button Text="SWIPE ON PANEL"  x:Name="myButton2"/>
             <Button Text="SWIPE ON BOTTOM"  x:Name="myButton3"/>
             <Button Text="SWIPE ON BOTTOM AND CLICK"  x:Name="myButton4"/>
+            <Button Text="SWIPE AND CLICK ON BOTTOM"  x:Name="myButton5"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -32,6 +32,10 @@ namespace demoActionXamarin
             {
                 Navigation.PushAsync(new SwipeAndClick());
             };
+            myButton5.Clicked += (sender, arg) =>
+            {
+                Navigation.PushAsync(new ClickSwipeTopay());
+            };
         }
     }
 }
